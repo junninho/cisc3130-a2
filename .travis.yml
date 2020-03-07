@@ -1,4 +1,4 @@
 language: java
 
 script:
-  - head -n 4 Main.java | sed -E 's/(.*)\:(.*)/\2/g'
+  - mvn exec:java -D exec.mainClass=Main
